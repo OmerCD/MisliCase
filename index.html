@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<table id="main-table">
+    <tr>
+        <th>Lig</th>
+        <th>Saat</th>
+        <th>MBS</th>
+        <th>Ev Sahibi - Konuk Takım</th>
+        <th>1</th>
+        <th>0</th>
+        <th>2</th>
+    </tr>
+</table>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <p id="bet-total"></p>
+   <div id="match-infos">
+
+   </div>
+    <select style="float:right;padding-right: 10px" onchange="betMultiplierChange(this.value)">
+        <option value="0">Misli</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <button id="bet-on" style="background-color: red">3 maç seçmeniz gerekmektedir</button>
+</div>
+
+<span style="font-size:20px;cursor:pointer;position: fixed;padding:10px;bottom: 0;background-color: darkorange;width: 150px;border-radius: 5px" onclick="openNav()">Kuponum</span>
+<script src="index.js"></script>
+<script src="slide.js"></script>
+</body>
+</html>
